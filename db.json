@@ -1,0 +1,268 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "iPhone 15 Pro",
+      "description": "Флагманский смартфон Apple с титановым корпусом.",
+      "price": 129990,
+      "currency": "RUB",
+      "category": "smartphones",
+      "thumbnail": "https://placehold.co/600x400?text=iPhone+15+Pro",
+      "images": [
+        "https://placehold.co/1200x800?text=iPhone+15+Pro+1",
+        "https://placehold.co/1200x800?text=iPhone+15+Pro+2"
+      ],
+      "rating": 4.8,
+      "stock": 12,
+      "brand": "Apple",
+      "sku": "APL-IP15PRO-128",
+      "specs": {
+        "display": "6.1 OLED",
+        "memory": "128 GB",
+        "color": "Titanium"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Samsung Galaxy S24",
+      "description": "Смартфон Samsung с AMOLED-дисплеем и мощной камерой.",
+      "price": 99990,
+      "currency": "RUB",
+      "category": "smartphones",
+      "thumbnail": "https://placehold.co/600x400?text=Galaxy+S24",
+      "images": [
+        "https://placehold.co/1200x800?text=Galaxy+S24+1",
+        "https://placehold.co/1200x800?text=Galaxy+S24+2"
+      ],
+      "rating": 4.7,
+      "stock": 18,
+      "brand": "Samsung",
+      "sku": "SMS-S24-256",
+      "specs": {
+        "display": "6.2 AMOLED",
+        "memory": "256 GB",
+        "color": "Black"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Google Pixel 8",
+      "description": "Компактный Android-смартфон с отличной камерой.",
+      "price": 74990,
+      "currency": "RUB",
+      "category": "smartphones",
+      "thumbnail": "https://placehold.co/600x400?text=Pixel+8",
+      "images": [
+        "https://placehold.co/1200x800?text=Pixel+8+1",
+        "https://placehold.co/1200x800?text=Pixel+8+2"
+      ],
+      "rating": 4.6,
+      "stock": 9,
+      "brand": "Google",
+      "sku": "GGL-PXL8-128",
+      "specs": {
+        "display": "6.2 OLED",
+        "memory": "128 GB",
+        "color": "Hazel"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Xiaomi 14",
+      "description": "Производительный смартфон с быстрой зарядкой.",
+      "price": 69990,
+      "currency": "RUB",
+      "category": "smartphones",
+      "thumbnail": "https://placehold.co/600x400?text=Xiaomi+14",
+      "images": [
+        "https://placehold.co/1200x800?text=Xiaomi+14+1",
+        "https://placehold.co/1200x800?text=Xiaomi+14+2"
+      ],
+      "rating": 4.5,
+      "stock": 15,
+      "brand": "Xiaomi",
+      "sku": "XMI-14-256",
+      "specs": {
+        "display": "6.36 AMOLED",
+        "memory": "256 GB",
+        "color": "White"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Sony WH-1000XM5",
+      "description": "Беспроводные наушники с активным шумоподавлением.",
+      "price": 34990,
+      "currency": "RUB",
+      "category": "audio",
+      "thumbnail": "https://placehold.co/600x400?text=Sony+XM5",
+      "images": [
+        "https://placehold.co/1200x800?text=Sony+XM5+1",
+        "https://placehold.co/1200x800?text=Sony+XM5+2"
+      ],
+      "rating": 4.9,
+      "stock": 7,
+      "brand": "Sony",
+      "sku": "SNY-XM5-BLK",
+      "specs": {
+        "type": "Over-ear",
+        "connection": "Bluetooth 5.2",
+        "color": "Black"
+      }
+    },
+    {
+      "id": 6,
+      "title": "AirPods Pro 2",
+      "description": "Компактные TWS-наушники Apple с ANC.",
+      "price": 25990,
+      "currency": "RUB",
+      "category": "audio",
+      "thumbnail": "https://placehold.co/600x400?text=AirPods+Pro+2",
+      "images": [
+        "https://placehold.co/1200x800?text=AirPods+Pro+2+1",
+        "https://placehold.co/1200x800?text=AirPods+Pro+2+2"
+      ],
+      "rating": 4.8,
+      "stock": 20,
+      "brand": "Apple",
+      "sku": "APL-APP2-WHT",
+      "specs": {
+        "type": "In-ear",
+        "connection": "Bluetooth",
+        "color": "White"
+      }
+    },
+    {
+      "id": 7,
+      "title": "MacBook Air 13 M3",
+      "description": "Легкий ноутбук Apple для работы и повседневных задач.",
+      "price": 154990,
+      "currency": "RUB",
+      "category": "laptops",
+      "thumbnail": "https://placehold.co/600x400?text=MacBook+Air+M3",
+      "images": [
+        "https://placehold.co/1200x800?text=MacBook+Air+M3+1",
+        "https://placehold.co/1200x800?text=MacBook+Air+M3+2"
+      ],
+      "rating": 4.9,
+      "stock": 6,
+      "brand": "Apple",
+      "sku": "APL-MBA13-M3",
+      "specs": {
+        "display": "13.6 Retina",
+        "memory": "8 GB",
+        "storage": "256 GB SSD"
+      }
+    },
+    {
+      "id": 8,
+      "title": "ASUS Zenbook 14",
+      "description": "Ультрабук для работы, учебы и поездок.",
+      "price": 89990,
+      "currency": "RUB",
+      "category": "laptops",
+      "thumbnail": "https://placehold.co/600x400?text=ASUS+Zenbook+14",
+      "images": [
+        "https://placehold.co/1200x800?text=ASUS+Zenbook+14+1",
+        "https://placehold.co/1200x800?text=ASUS+Zenbook+14+2"
+      ],
+      "rating": 4.4,
+      "stock": 11,
+      "brand": "ASUS",
+      "sku": "ASS-ZBK14-512",
+      "specs": {
+        "display": "14 OLED",
+        "memory": "16 GB",
+        "storage": "512 GB SSD"
+      }
+    },
+    {
+      "id": 9,
+      "title": "iPad Air 11",
+      "description": "Планшет Apple для учебы, контента и заметок.",
+      "price": 79990,
+      "currency": "RUB",
+      "category": "tablets",
+      "thumbnail": "https://placehold.co/600x400?text=iPad+Air+11",
+      "images": [
+        "https://placehold.co/1200x800?text=iPad+Air+11+1",
+        "https://placehold.co/1200x800?text=iPad+Air+11+2"
+      ],
+      "rating": 4.7,
+      "stock": 13,
+      "brand": "Apple",
+      "sku": "APL-IPDAIR11-128",
+      "specs": {
+        "display": "11 Liquid Retina",
+        "memory": "128 GB",
+        "color": "Blue"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Kindle Paperwhite",
+      "description": "Электронная книга с подсветкой и защитой от воды.",
+      "price": 18990,
+      "currency": "RUB",
+      "category": "ebooks",
+      "thumbnail": "https://placehold.co/600x400?text=Kindle+Paperwhite",
+      "images": [
+        "https://placehold.co/1200x800?text=Kindle+Paperwhite+1",
+        "https://placehold.co/1200x800?text=Kindle+Paperwhite+2"
+      ],
+      "rating": 4.8,
+      "stock": 14,
+      "brand": "Amazon",
+      "sku": "AMZ-KNDL-PW",
+      "specs": {
+        "display": "6.8 E-Ink",
+        "memory": "16 GB",
+        "color": "Black"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Logitech MX Master 3S",
+      "description": "Беспроводная мышь для продуктивной работы.",
+      "price": 12990,
+      "currency": "RUB",
+      "category": "accessories",
+      "thumbnail": "https://placehold.co/600x400?text=MX+Master+3S",
+      "images": [
+        "https://placehold.co/1200x800?text=MX+Master+3S+1",
+        "https://placehold.co/1200x800?text=MX+Master+3S+2"
+      ],
+      "rating": 4.9,
+      "stock": 22,
+      "brand": "Logitech",
+      "sku": "LOG-MXM3S-GRY",
+      "specs": {
+        "type": "Wireless",
+        "connection": "Bluetooth / USB",
+        "color": "Graphite"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Dell UltraSharp 27",
+      "description": "27-дюймовый монитор для работы и дизайна.",
+      "price": 42990,
+      "currency": "RUB",
+      "category": "monitors",
+      "thumbnail": "https://placehold.co/600x400?text=Dell+UltraSharp+27",
+      "images": [
+        "https://placehold.co/1200x800?text=Dell+UltraSharp+27+1",
+        "https://placehold.co/1200x800?text=Dell+UltraSharp+27+2"
+      ],
+      "rating": 4.6,
+      "stock": 8,
+      "brand": "Dell",
+      "sku": "DLL-U2724D",
+      "specs": {
+        "display": "27 IPS",
+        "resolution": "2560x1440",
+        "color": "Silver"
+      }
+    }
+  ]
+}
