@@ -17,9 +17,9 @@
       "brand": "Apple",
       "sku": "APL-IP15PRO-128",
       "specs": {
-        "display": "6.1 OLED",
-        "memory": "128 GB",
-        "color": "Titanium"
+        "Дисплей": "6.1 OLED",
+        "Память": "128 GB",
+        "Цвет": "Titanium"
       }
     },
     {
@@ -39,9 +39,9 @@
       "brand": "Samsung",
       "sku": "SMS-S24-256",
       "specs": {
-        "display": "6.2 AMOLED",
-        "memory": "256 GB",
-        "color": "Black"
+        "Дисплей": "6.2 AMOLED",
+        "Память": "256 GB",
+        "Цвет": "Black"
       }
     },
     {
@@ -61,9 +61,9 @@
       "brand": "Google",
       "sku": "GGL-PXL8-128",
       "specs": {
-        "display": "6.2 OLED",
-        "memory": "128 GB",
-        "color": "Hazel"
+        "Дисплей": "6.2 OLED",
+        "Память": "128 GB",
+        "Цвет": "Hazel"
       }
     },
     {
@@ -83,9 +83,9 @@
       "brand": "Xiaomi",
       "sku": "XMI-14-256",
       "specs": {
-        "display": "6.36 AMOLED",
-        "memory": "256 GB",
-        "color": "White"
+        "Дисплей": "6.36 AMOLED",
+        "Память": "256 GB",
+        "Цвет": "White"
       }
     },
     {
@@ -105,9 +105,9 @@
       "brand": "Sony",
       "sku": "SNY-XM5-BLK",
       "specs": {
-        "type": "Over-ear",
-        "connection": "Bluetooth 5.2",
-        "color": "Black"
+        "Тип": "Over-ear",
+        "Подключение": "Bluetooth 5.2",
+        "Цвет": "Black"
       }
     },
     {
@@ -127,9 +127,9 @@
       "brand": "Apple",
       "sku": "APL-APP2-WHT",
       "specs": {
-        "type": "In-ear",
-        "connection": "Bluetooth",
-        "color": "White"
+        "Тип": "In-ear",
+        "Подключение": "Bluetooth",
+        "Цвет": "White"
       }
     },
     {
@@ -149,9 +149,9 @@
       "brand": "Apple",
       "sku": "APL-MBA13-M3",
       "specs": {
-        "display": "13.6 Retina",
-        "memory": "8 GB",
-        "storage": "256 GB SSD"
+        "Дисплей": "13.6 Retina",
+        "Память": "8 GB",
+        "Хранилище": "256 GB SSD"
       }
     },
     {
@@ -171,9 +171,9 @@
       "brand": "ASUS",
       "sku": "ASS-ZBK14-512",
       "specs": {
-        "display": "14 OLED",
-        "memory": "16 GB",
-        "storage": "512 GB SSD"
+        "Дисплей": "14 OLED",
+        "Память": "16 GB",
+        "Хранилище": "512 GB SSD"
       }
     },
     {
@@ -193,9 +193,9 @@
       "brand": "Apple",
       "sku": "APL-IPDAIR11-128",
       "specs": {
-        "display": "11 Liquid Retina",
-        "memory": "128 GB",
-        "color": "Blue"
+        "Дисплей": "11 Liquid Retina",
+        "Память": "128 GB",
+        "Цвет": "Blue"
       }
     },
     {
@@ -215,9 +215,9 @@
       "brand": "Amazon",
       "sku": "AMZ-KNDL-PW",
       "specs": {
-        "display": "6.8 E-Ink",
-        "memory": "16 GB",
-        "color": "Black"
+        "Дисплей": "6.8 E-Ink",
+        "Память": "16 GB",
+        "Цвет": "Black"
       }
     },
     {
@@ -237,9 +237,9 @@
       "brand": "Logitech",
       "sku": "LOG-MXM3S-GRY",
       "specs": {
-        "type": "Wireless",
-        "connection": "Bluetooth / USB",
-        "color": "Graphite"
+        "Тип": "Wireless",
+        "Подключение": "Bluetooth / USB",
+        "Цвет": "Graphite"
       }
     },
     {
@@ -259,10 +259,11 @@
       "brand": "Dell",
       "sku": "DLL-U2724D",
       "specs": {
-        "display": "27 IPS",
-        "resolution": "2560x1440",
-        "color": "Silver"
+        "Дисплей": "27 IPS",
+        "Разрешение": "2560x1440",
+        "Цвет": "Silver"
       }
     }
   ]
 }
+

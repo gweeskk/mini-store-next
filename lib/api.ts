@@ -1,5 +1,5 @@
 import { Product } from "@/types/product";
-const BASE_URL = "http://localhost:3000/";
+const BASE_URL = "http://localhost:3000";
 
 export async function getProducts(): Promise<Product[]> {  
   const response = await fetch(`${BASE_URL}/products`, {
@@ -11,7 +11,7 @@ export async function getProducts(): Promise<Product[]> {
   return response.json();
 }
 
-export async function getProductById(id: number): Promise<Product> {
+export async function getProductById(id: string): Promise<Product> {
   const response = await fetch(`${BASE_URL}/products/${id}`, {
     cache: "no-store",
   });
@@ -20,3 +20,4 @@ export async function getProductById(id: number): Promise<Product> {
   }
   return response.json();
 }
+

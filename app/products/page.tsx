@@ -5,6 +5,7 @@ import "./page.css";
 export default async function ProductsPage() {
   const products = await getProducts();
 
+
   return (
     <main className="productsPage">
       <h1 className="productsTitle">Товары</h1>
@@ -22,9 +23,10 @@ export default async function ProductsPage() {
             <p className="productText">
               {product.price} {product.currency}
             </p>
-            <p className="productText">Category: {product.category}</p>
-            <p className="productText">Rating: {product.rating}</p>
-            <p className="productText">Stock: {product.stock}</p>
+            <p className="productText">Категория: {product.category}</p>
+            <p className="productText">Рейтинг: {product.rating}</p>
+            <p className = "productText">Бренд: {product.brand}</p>
+            <p className="productText"> {product.stock > 0 ? `В наличии: ${product.stock}"` : "Нет в наличии"}</p>
 
             <Link href={`/products/${product.id}`} className="productLink">
               Открыть детали

@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { getProductById } from "@/lib/api";
 import "./page.css";
+
 
 type Product = {
   id: number;
@@ -18,28 +20,23 @@ type Product = {
 };
 
 type ProductPageProps = {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 };
 
 export default async function ProductDetailsPage({ params }: ProductPageProps) {
+  const { id } = await params;
+
   let product: Product | null = null;
   let error: string | null = null;
 
   try {
-    const response = await fetch(`http://localhost:3000/products/${params.id}`, {
-      cache: "no-store",
-    });
-
-    if (!response.ok) {
-      throw new Error("Failed to fetch product");
-    }
-
-    product = await response.json();
+    product = await getProductById(id);
   } catch (err) {
     error = err instanceof Error ? err.message : "Неизвестная ошибка";
   }
+
 
   if (error) {
     return (
@@ -117,6 +114,7 @@ export default async function ProductDetailsPage({ params }: ProductPageProps) {
           <p className="productText">
             <strong>Наличие:</strong> {product.stock}
           </p>
+  
 
           <h2 className="specsTitle">Характеристики</h2>
           <ul className="specsList">
