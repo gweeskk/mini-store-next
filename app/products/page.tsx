@@ -25,8 +25,7 @@ export default async function ProductsPage() {
             </p>
             <p className="productText">Категория: {product.category}</p>
             <p className="productText">Рейтинг: {product.rating}</p>
-            <p className = "productText">Бренд: {product.brand}</p>
-            <p className="productText"> {product.stock > 0 ? `В наличии: ${product.stock}"` : "Нет в наличии"}</p>
+            <p className="productText"> {product.stock > 0 ? `В наличии: ${product.stock}` : "Нет в наличии"}</p>
 
             <Link href={`/products/${product.id}`} className="productLink">
               Открыть детали

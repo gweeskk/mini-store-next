@@ -6,7 +6,7 @@ export async function getProducts(): Promise<Product[]> {
     cache: "no-store",
   });
   if(!response.ok) {
-    throw new Error("Не удалось загрузить продукты");
+    throw new Error("Не удалось загрузить список товаров");
   }
   return response.json();
 }
@@ -16,7 +16,7 @@ export async function getProductById(id: string): Promise<Product> {
     cache: "no-store",
   });
   if(!response.ok) {
-    throw new Error("Не удалось загрузить продукт");
+    throw new Error("Не удалось загрузить детали товара");
   }
   return response.json();
 }

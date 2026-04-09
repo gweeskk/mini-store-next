@@ -1,22 +1,16 @@
 import Link from "next/link";
 import { getProductById } from "@/lib/api";
+import type { Product } from "@/types/product";
 import "./page.css";
 
-
-type Product = {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  currency: string;
-  category: string;
-  thumbnail: string;
-  images: string[];
-  rating: number;
-  stock: number;
-  brand: string;
-  sku: string;
-  specs: Record<string, string>;
+const specsLabels: Record<string, string> = {
+  display: "Дисплей",
+  memory: "Память",
+  color: "Цвет",
+  storage: "Хранилище",
+  connection: "Подключение",
+  type: "Тип",
+  resolution: "Разрешение",
 };
 
 type ProductPageProps = {
@@ -28,37 +22,7 @@ type ProductPageProps = {
 export default async function ProductDetailsPage({ params }: ProductPageProps) {
   const { id } = await params;
 
-  let product: Product | null = null;
-  let error: string | null = null;
-
-  try {
-    product = await getProductById(id);
-  } catch (err) {
-    error = err instanceof Error ? err.message : "Неизвестная ошибка";
-  }
-
-
-  if (error) {
-    return (
-      <main className="productDetailsPage">
-        <p>Error: {error}</p>
-        <Link href="/products" className="backLink">
-          ← Вернуться к товарам
-        </Link>
-      </main>
-    );
-  }
-
-  if (!product) {
-    return (
-      <main className="productDetailsPage">
-        <p>Продукт не найден</p>
-        <Link href="/products" className="backLink">
-          ← Вернуться к товарам
-        </Link>
-      </main>
-    );
-  }
+const product = await getProductById(id);
 
   const productImages = Array.isArray(product.images) ? product.images : [];
   const productSpecs =
@@ -111,16 +75,15 @@ export default async function ProductDetailsPage({ params }: ProductPageProps) {
           <p className="productText">
             <strong>Рейтинг:</strong> {product.rating}
           </p>
-          <p className="productText">
-            <strong>Наличие:</strong> {product.stock}
-          </p>
+          <p className="productText"> {product.stock > 0 ? `В наличии: ${product.stock}`
+          : "Нет в наличии"}</p>
   
 
           <h2 className="specsTitle">Характеристики</h2>
           <ul className="specsList">
             {Object.entries(productSpecs).map(([key, value]) => (
               <li key={key} className="specsItem">
-                <strong>{key}:</strong> {value}
+                <strong>{specsLabels[key] || key}:</strong> {value}
               </li>
             ))}
           </ul>
