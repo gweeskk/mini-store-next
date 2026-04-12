@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ProductSpecs from "@/components/ProductSpecs";
 import { getProductById } from "@/lib/api";
 import type { Product } from "@/types/product";
 import "./page.css";
@@ -77,16 +78,8 @@ const product = await getProductById(id);
           </p>
           <p className="productText"> {product.stock > 0 ? `В наличии: ${product.stock}`
           : "Нет в наличии"}</p>
-  
-
-          <h2 className="specsTitle">Характеристики</h2>
-          <ul className="specsList">
-            {Object.entries(productSpecs).map(([key, value]) => (
-              <li key={key} className="specsItem">
-                <strong>{specsLabels[key] || key}:</strong> {value}
-              </li>
-            ))}
-          </ul>
+          
+          <ProductSpecs specs={productSpecs} />
         </div>
       </section>
     </main>

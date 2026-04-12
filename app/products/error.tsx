@@ -1,5 +1,6 @@
 "use client";
 
+
 type ProductsErrorProps = {
   error: Error & { digest?: string };
   reset: () => void;
