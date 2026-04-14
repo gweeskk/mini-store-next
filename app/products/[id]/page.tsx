@@ -5,7 +5,6 @@ import ProductGallery  from "@/components/ProductGallery";
 import ProductInfo from "@/components/ProductInfo";
 import "./page.css";
 
-
 type ProductPageProps = {
   params: Promise<{
     id: string;
@@ -34,12 +33,16 @@ export default async function ProductDetailsPage({ params }: ProductPageProps) {
 
           <ProductGallery product={product} />
         </div>
+
         <div>
-        <ProductInfo product={product} />
-        <ProductSpecs specs={productSpecs} />
+          <ProductInfo product={product} />
+          <div className="specsBlock">
+            <ProductSpecs specs={productSpecs} />
+          </div>
         </div>
       </section>
 
     </main>
     );
 }
+

@@ -12,7 +12,7 @@ error,
 }: ProductDetailsErrorProps) {
   return (
     <main className="productDetailsError">
-      <h1>Не удалось загрузить данные товара</h1>
+      <h1>Не удалось загрузить данные товара. Просьба проверить, запущен ли mock API, и попробовать снова.</h1>
       <p>{error.message}</p>
 
       <button type="button" onClick={() => reset()} className="retryButton">

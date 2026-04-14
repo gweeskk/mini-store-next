@@ -1,4 +1,4 @@
-import { Product } from "@/types/product";
+import type { Product } from "@/types/product";
 const BASE_URL = "http://localhost:3000";
 
 export async function getProducts(): Promise<Product[]> {  

@@ -16,7 +16,7 @@ type ProductSpecsProps = {
 
 export default function ProductSpecs({ specs }: ProductSpecsProps) {
   return (
-    <div>
+    <div className="specsBlock">
       <h2 className="specsTitle">Характеристики</h2>
       <ul className="specsList">
         {Object.entries(specs).map(([key, value]) => (

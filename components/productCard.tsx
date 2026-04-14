@@ -16,8 +16,8 @@ export default function ProductCard({ product }: ProductCardProps) {
             />
 
             <h2 className="productCardTitle">{product.title}</h2>
-            <p className="productText">
-              {product.price} {product.currency}
+            <p className="productPrice">
+              {formatPrice(product.price, product.currency)}
             </p>
             <p className="productText">Категория: {product.category}</p>
             <p className="productText">Рейтинг: {product.rating}</p>

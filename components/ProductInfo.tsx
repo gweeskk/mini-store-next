@@ -1,13 +1,12 @@
-import { Product } from "@/types/product";
+import type { Product } from "@/types/product";
 import { formatPrice } from "@/lib/formatPrice";
 
 export default function ProductInfo({ product}: { product: Product }) {
   return (
     <div className="productInfo">
-      <div>
           <h1 className="productTitle">{product.title}</h1>
 
-          <p className="productText">
+          <p className="productPrice">
             <strong>Цена:</strong> {formatPrice(product.price, product.currency)}
           </p>
           <p className="productText">
@@ -27,7 +26,6 @@ export default function ProductInfo({ product}: { product: Product }) {
           </p>
           <p className="productText"> {product.stock > 0 ? `В наличии: ${product.stock}`
           : "Нет в наличии"}</p>
-        </div>
-    </div>
+      </div>
   );
 }
