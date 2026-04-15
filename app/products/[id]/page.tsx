@@ -13,6 +13,7 @@ type ProductPageProps = {
 
 export default async function ProductDetailsPage({ params }: ProductPageProps) {
   const { id } = await params;
+try {
   const product = await getProductById(id);
   const productSpecs =
     product.specs && typeof product.specs === "object" ? product.specs : {};
@@ -44,5 +45,18 @@ export default async function ProductDetailsPage({ params }: ProductPageProps) {
 
     </main>
     );
+} catch (error) {
+  if (error instanceof Error && error.message ===  "Товар не найден" {
+    return (
+       <main className = "productDetailsPage">
+      <Link href="/products" className="backLink">
+        ← Вернуться к товарам
+      </Link>
+         <div className =  "productDetailsError">
+           <h1>Товар не найден</h1>
+         </div>
+       </main>
+      );
+  } throw error;
 }
 
