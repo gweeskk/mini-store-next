@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getProductById } from "@/lib/api";
 import ProductSpecs from "@/components/ProductSpecs";
-import ProductGallery  from "@/components/ProductGallery";
+import ProductGallery from "@/components/ProductGallery";
 import ProductInfo from "@/components/ProductInfo";
 import "./page.css";
 
@@ -12,13 +13,31 @@ type ProductPageProps = {
 };
 
 export default async function ProductDetailsPage({ params }: ProductPageProps) {
-  const { id } = await params;
-try {
-  const product = await getProductById(id);
-  const productSpecs =
-    product.specs && typeof product.specs === "object" ? product.specs : {};
+  const { id } = await params
+  let product;
+  let productSpecs = {};
 
-  return (
+  try {
+    product = await getProductById(id);
+    productSpecs =
+      product.specs && typeof product.specs === "object" ? product.specs : {};
+  } catch (error) {
+    if (error instanceof Error && error.message === "Товар не найден") {
+      return (
+        <main className="productDetailsPage">
+          <Link href="/products" className="backLink">
+            ← Вернуться к товарам
+          </Link>
+
+          <div className="productDetailsError">
+            <h1>Товар не найден</h1>
+            <p>Запрашиваемый товар не найден. Просьба проверить корректность ID.</p>
+          </div>
+        </main>
+      );
+    }
+    throw error;
+  } return (
     <main className="productDetailsPage">
       <Link href="/products" className="backLink">
         ← Вернуться к товарам
@@ -27,10 +46,10 @@ try {
       <section className="productDetailsCard">
         <div>
           <img
-            src={product.thumbnail}
-            alt={product.title}
-            className="productMainImage"
-          />
+        src={product.thumbnail}
+        alt={product.title}
+        className="productMainImage"
+        />
 
           <ProductGallery product={product} />
         </div>
@@ -44,19 +63,6 @@ try {
       </section>
 
     </main>
-    );
-} catch (error) {
-  if (error instanceof Error && error.message ===  "Товар не найден" {
-    return (
-       <main className = "productDetailsPage">
-      <Link href="/products" className="backLink">
-        ← Вернуться к товарам
-      </Link>
-         <div className =  "productDetailsError">
-           <h1>Товар не найден</h1>
-         </div>
-       </main>
-      );
-  } throw error;
+  );
 }
 
