@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getProductById } from "@/lib/api";
 import ProductSpecs from "@/components/ProductSpecs";
 import ProductGallery from "@/components/ProductGallery";
