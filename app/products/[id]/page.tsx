@@ -64,4 +64,3 @@ export default async function ProductDetailsPage({ params }: ProductPageProps) {
     </main>
   );
 }
-

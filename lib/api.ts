@@ -15,12 +15,15 @@ export async function getProductById(id: string): Promise<Product> {
   const response = await fetch(`${BASE_URL}/products/${id}`, {
     cache: "no-store",
   });
-  if (response.status === 404) {
-    throw new Error ("Товар не найден");
-  }
+
   if(!response.ok) {
     throw new Error("Не удалось загрузить детали товара");
   }
-  return response.json();
-}
+  const product = await response.json();
 
+  if (!product || !product.id || !product.title || product.price === undefined) {
+    throw new Error("Товар не найден");
+  }
+
+  return product;
+}

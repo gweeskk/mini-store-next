@@ -12,7 +12,8 @@ export default async function ProductsPage() {
 
       <div className="productsGrid">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard key={product.id} id={product.id} />
+          
         ))}
       </div>
     </main>
